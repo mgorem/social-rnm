@@ -8,6 +8,8 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
+import profile1 from "../../assets/profile-2022.jpg";
+import profile2 from "../../assets/profile2.jpeg";
 
 const NavBar = () => {
   return (
@@ -15,21 +17,21 @@ const NavBar = () => {
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Let's Get Social</span>
-          <HomeOutlinedIcon />
-          <DarkModeOutlinedIcon />
-          <GridViewOutlinedIcon />
-          <div className="search">
-            <SearchOutlinedIcon />
-            <input type="text" placeholder="search" />
-          </div>
         </Link>
+        <HomeOutlinedIcon />
+        <DarkModeOutlinedIcon />
+        <GridViewOutlinedIcon />
+        <div className="search">
+          <SearchOutlinedIcon />
+          <input type="text" placeholder="Search..." />
+        </div>
       </div>
       <div className="right">
         <PersonOutlinedIcon />
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
         <div className="user">
-          <img src="" alt="" />
+          <img src={profile2} alt="userprofile" />
           <span>Orem G</span>
         </div>
       </div>
